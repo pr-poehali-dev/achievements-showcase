@@ -118,6 +118,13 @@ const Index = () => {
     <div className="min-h-screen py-12 px-4">
       {/* Header */}
       <div className="text-center mb-16 animate-fade-in">
+        <div className="flex justify-center mb-6">
+          <img 
+            src="https://cdn.poehali.dev/files/4fe93c0f-0325-4b45-b384-ca9811ec2c8c.jpg"
+            alt="Lisulifka Logo"
+            className="w-32 h-32 rounded-full shadow-2xl animate-float"
+          />
+        </div>
         <h1 className="rune-title text-fox-earth mb-4">ᚳᛋᛈⰓᛋ ᚢᚹᛟᚦᛊᚳᛕᛋ</h1>
         <p className="creative-text text-2xl text-fox-orange mb-8">Творческое пространство души</p>
         <div className="w-32 h-1 bg-gradient-to-r from-fox-orange to-fox-teal mx-auto rounded-full"></div>
