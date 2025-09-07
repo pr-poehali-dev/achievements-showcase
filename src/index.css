@@ -90,12 +90,39 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Caveat:wght@400;600;700&display=swap");
+
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gradient-to-br from-fox-cream via-fox-mint to-fox-teal text-foreground;
+    font-family: "Merriweather", serif;
+    background-attachment: fixed;
+  }
+
+  .rune-title {
+    font-family: "Times New Roman", serif;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+  }
+
+  .creative-text {
+    font-family: "Caveat", cursive;
+  }
+
+  .fox-hole-bg {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 248, 220, 0.9) 0%,
+      rgba(168, 230, 207, 0.8) 50%,
+      rgba(78, 205, 196, 0.7) 100%
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(139, 69, 19, 0.1);
   }
 }
