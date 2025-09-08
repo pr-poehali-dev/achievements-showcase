@@ -28,8 +28,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
   const login = async (email: string, password: string): Promise<boolean> => {
     // TODO: Implement real authentication
-    // For now, mock authentication for owner
-    if (email === 'owner@example.com' && password === 'admin123') {
+    // For now, allow any credentials for demo
+    if (email && password) {
       setIsAuthenticated(true);
       setUser({ id: '1', name: 'Лисулифка', role: 'owner' });
       return true;

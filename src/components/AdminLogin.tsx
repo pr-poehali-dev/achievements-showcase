@@ -88,7 +88,7 @@ const AdminLogin = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="owner@example.com"
+                placeholder="любой@email.com"
                 className="mt-1"
                 required
               />
@@ -125,7 +125,7 @@ const AdminLogin = () => {
           </form>
           <div className="text-xs text-fox-earth/60 text-center mt-4">
             Система авторизации в разработке.<br/>
-            Демо: owner@example.com / admin123
+            Введите любой email и пароль для входа
           </div>
         </DialogContent>
       </Dialog>
