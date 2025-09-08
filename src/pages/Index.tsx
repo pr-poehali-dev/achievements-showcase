@@ -7,6 +7,8 @@ import SongsSection from "@/components/SongsSection";
 import VideoSection from "@/components/VideoSection";
 import PhotoGallery from "@/components/PhotoGallery";
 import SocialLinks from "@/components/SocialLinks";
+import AdminLogin from "@/components/AdminLogin";
+import { AuthProvider } from "@/context/AuthContext";
 
 const Index = () => {
   const poems = [
@@ -143,16 +145,20 @@ const Index = () => {
   ]);
 
   return (
-    <div className="min-h-screen py-12 px-4">
+    <AuthProvider>
+      <div className="min-h-screen py-12 px-4">
       <div className="max-w-6xl mx-auto space-y-16">
         <HeroSection />
         <PoemsSection poems={poems} />
         <FairytalesSection fairytales={fairytales} />
         <MusicSection music={music} />
         <SongsSection songs={songs} />
-        <VideoSection clips={clips} setClips={setClips} />
+        <VideoSection clips={clips} />
         <PhotoGallery photos={photos} />
         <SocialLinks />
+        
+        {/* Admin Login Component */}
+        <AdminLogin />
         
         {/* Footer */}
         <footer className="text-center py-8 animate-fade-in">
@@ -163,6 +169,7 @@ const Index = () => {
         </footer>
       </div>
     </div>
+    </AuthProvider>
   );
 };
 
