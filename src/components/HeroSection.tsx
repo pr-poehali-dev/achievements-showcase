@@ -36,10 +36,10 @@ const HeroSection = ({}: HeroSectionProps) => {
       <div className="fox-hole-bg p-8 rounded-3xl mb-16 animate-fade-in">
         <div className="text-center mb-6">
           <h2 className="creative-text text-3xl font-bold text-fox-earth mb-4">
-            ℿ ℘ Ϟ ɞ ɛ Ꮏ ɕ Ꮏ ɞ γ ю   ɞ ɑ ɕ ,   ϫ σ ℘ σ ɾ Ϟ ɛ   ϫ ℘ γ ʓ ƅ ᴙ ,   ϰ ɑ   w e b s i t e
+            Приветствую вас, дорогие друзья!
           </h2>
           <h3 className="creative-text text-2xl text-fox-orange mb-8">
-            « Ꮑ Ϟ ɕ ƅ Ϟ   π ℘ σ ϫ ɛ λ κ Ϟ »
+            « Лисьи проделки »
           </h3>
         </div>
         <div className="creative-text text-lg text-fox-earth leading-relaxed space-y-4 max-w-4xl mx-auto">
